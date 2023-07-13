@@ -15,7 +15,7 @@ export default function Home() {
             <Perfil.Contacts/>
           </div>
         </section>
-        <section>
+        <section className="flex flex-col items-center justify-center w-full h-full">
           <About/>
         </section>
         <section>
