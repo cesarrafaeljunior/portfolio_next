@@ -10,8 +10,10 @@ export default function Home() {
         <section className="w-full h-full flex flex-col relative">
           <NavComponent/>
           <Perfil.Apresentation/>
-          <Perfil.FormationInfos/>
-          <Perfil.Contacts/>
+          <div className="flex items-center gap-[2rem] w-full">
+            <Perfil.FormationInfos/>
+            <Perfil.Contacts/>
+          </div>
         </section>
         <section>
           <About/>
