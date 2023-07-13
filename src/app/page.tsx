@@ -20,7 +20,7 @@ export default function Home() {
         <section className="flex flex-col items-center justify-center w-full h-full" id="about">
           <About/>
         </section>
-        <section className="dlex flex-col items-center w-full h-100 m-[0 auto]" id="projects">
+        <section className="dlex flex-col items-center w-full h-100 m-[0 auto] max-w-screen-xl" id="projects">
           <Projects/>
         </section>
       </main>
