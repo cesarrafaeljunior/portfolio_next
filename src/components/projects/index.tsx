@@ -1,23 +1,37 @@
+'use client'
+import {useState} from "react"
 import { projects } from "@/database/projects"
 import Image from "next/image"
-import {AiOutlineArrowLeft} from "react-icons/ai"
-import {AiOutlineArrowRight} from "react-icons/ai"
 import {AiFillTags} from "react-icons/ai"
 import img from "../../assets/img/project_example.jpg"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/navigation';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 export const Projects = () => {
+
+    const [projectNumber, setProjectNumber] = useState(0)
+
+    const projectNextNumber = () => {
+        setProjectNumber(projectNumber + 1)
+    }
+
+    const projectPreviousNumber = () => {
+        setProjectNumber(projectNumber - 1)
+    }
+
     return (
         <div className="text-center mt-[2rem]">
 
 
             <h2 className="text-[2rem] text-violet-700 relative">Projetos</h2>
             <div className="relative w-full h-full flex items-center justify-center">
-                <AiOutlineArrowLeft className="absolute top-[50%] left-[1rem] text-[5rem] cursor-pointer transition delay-[0.1s] hover:text-violet-700"/>
-                <AiOutlineArrowRight className="absolute top-[50%] right-[1rem] text-[5rem] cursor-pointer transition delay-[0.1s] hover:text-violet-700"/>
-                <ul className="w-[984px] h-[680px] flex overflow-x-hidden overflow-y-none p-[0.5rem] gap-[1rem]">
+                <Swiper navigation={true} modules={[Navigation]} onSlideNextTransitionStart={projectNextNumber} onSlidePrevTransitionStart={projectPreviousNumber} className=" w-[984px] h-[800px] p-[0.5rem]">
                     {projects.map(project => {
                         return (
-                            <li key={project.id} className="min-w-full">
+                            <SwiperSlide  key={project.id} className="pl-[1rem]">
                                 <div>
                                     <p className="text-start font-bold text-[1.5rem]">{project.title}</p>
                                     <div className="flex">
@@ -54,16 +68,16 @@ export const Projects = () => {
                                     }
 
                                     </ul>         
-                                    <div className="w-full flex flex-col items-center gap-[1rem] p-[1.5rem] bg-slate-950 rounded-[1rem] mt-[4rem]">
+                                    <div className="w-full flex flex-col items-center gap-[1rem] p-[1.5rem] bg-slate-950 rounded-[1rem] mt-[4rem] min-h-[13rem]">
                                         <h4 className="font-bold text-[1.2rem]">Descrição do projeto</h4>
                                         <p>{project.description} </p>
                                     </div>
                                 </div>  
-                            </li>
+                            </SwiperSlide>
                         )
-                    })}
-                    <p className="absolute top-[1rem] right-[11rem]">Projetos: 1/9</p>
-                </ul>
+                        })}
+                </Swiper>
+                    <p className="absolute top-[1rem] right-[11rem]">Projetos: {projectNumber + 1}/{projects.length}</p>
             </div>
         </div>
     )

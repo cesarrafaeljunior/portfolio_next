@@ -1,3 +1,12 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.swiper-button-next {
+  font-weight: bold;
+  color: #a838ff !important;
+}
+.swiper-button-prev {
+  color: #a838ff !important;
+  font-weight: bold;
+}

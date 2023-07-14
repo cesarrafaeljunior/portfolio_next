@@ -93,25 +93,6 @@ export const projects = [
   },
   {
     id: 8,
-    title: "Mks System",
-    description:
-      "O projeto se trata de uma simulação de um e-commerce de eletrônicos, várias funcionalidades comums de um e-commerce foram adicionadas, tais como, adicionar produtos no carrinho, alterar a quantidade do mesmo produto no carrinho, remover produtos do carrinho, alteração automatica no total de preços da compra. O aplicativo consome uma Api Rest de produtos e os exibe na tela.",
-    img_banner: "./assets/img/project_example.jpg",
-    types: ["Acadêmico", "Front-End"],
-    deploy:
-      "https://teste-tecnico-16mhh7qbb-cesarrafaeljunior.vercel.app/mainPage",
-    repository: "https://github.com/cesarrafaeljunior/mks_systems",
-    techs: [
-      "React",
-      "TypeScript",
-      "Redux",
-      "Styled Components",
-      "Axios",
-      "Router Dom",
-    ],
-  },
-  {
-    id: 9,
     title: "PortGeek",
     description:
       "Port Geek é um projeto acadêmico, desenvolvido em equipe, ele permite que usuários se cadastrem na plataforma para que possam gerar o seu próprio portfólio, podendo escolher dentre umas das 3 opções inicalmente adicionadas na aplicação. Nossa aplicação, permite que o usuário adicione imagens de perfil, imagem de um projeto com seu respectivo link de deploy e repositório, este projeto será clickável quando o portfólio for gerado.",
