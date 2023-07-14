@@ -13,7 +13,7 @@ export const Apresentation = () => {
             <div className="flex flex-col gap-[1rem]">
                 <h1><span className="text-4xl text-violet-700">Olá</span>,<span className="text-[2.2rem]"> eu sou o César</span></h1>
                 <p className="text-violet-600">Desenvolvedor Full Stack</p>
-                <p>Conectando tecnologia e inovação, uma linha de código por vez</p>
+                <p className="text-gray-400">&quot;Conectando tecnologia e inovação, uma linha de código por vez&quot;</p>
             </div>
             </div>
         </div>
