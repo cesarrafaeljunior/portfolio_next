@@ -25,7 +25,7 @@ export default function Home() {
         </section>
       </main>
     </div>
-    <section className="w-full bg-slate-950">
+    <section className="w-full bg-slate-950 mt-[10rem]">
         <Footer/>
     </section>
   </>
