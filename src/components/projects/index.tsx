@@ -47,7 +47,7 @@ export const Projects = () => {
                                             </div>       
                                         </div>
                                     </div>
-                                    <ul className="flex gap-[25px] text-[0.9rem] font-medium items-center my-[1.8rem] mt-[2.5rem]  phone:overflow-x-auto phone:flex-wrap phone:mt-[2rem]">
+                                    <ul className="flex gap-[25px] text-[0.9rem] font-medium items-center my-[1.8rem] mt-[2.5rem]  phone:overflow-x-auto phone:flex-wrap phone:mt-[2rem] tablet:flex-wrap tablet:overflow-x-auto">
                                         {
                                         
                                             project.techs.map(techs => {
