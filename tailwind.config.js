@@ -9,9 +9,7 @@ module.exports = {
   theme: {
     screens: {
       phone: { min: "320px", max: "640px" },
-      tablet: "640px",
-      laptop: "1024px",
-      desktop: { min: "1280px" },
+      desktop: { min: "1920px" },
     },
   },
   plugins: [],

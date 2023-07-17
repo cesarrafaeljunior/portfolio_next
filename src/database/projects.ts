@@ -17,7 +17,7 @@ export const projects: iProjects[] = [
     description:
       "Kenzie Kars é uma plataforma online para compra e venda de veículos automotivos, oferecendo opções tanto para carros novos quanto usados. Como cliente, você pode navegar por diversos anúncios de carros e encontrar o veículo que atenda às suas necessidades e orçamento. Já como vendedor, você pode anunciar seu carro e expô-lo a uma ampla audiência de compradores em potencial.",
     img_banner: "/assets/img/projectsBanner/kenzieKars.png",
-    types: ["Acadêmico", "Front-End"],
+    types: ["Acadêmico", "Front-End", "Equipe"],
     deploy: "https://motors-shop-ten.vercel.app/",
     repository: "https://github.com/cesarrafaeljunior/kenzie_kars_front",
     techs: ["React", "TypeScript", "Next.js", "Chakra UI", "Yup"],
@@ -28,7 +28,7 @@ export const projects: iProjects[] = [
     title: "Kenzie Kars Api",
     description: "Api da aplicação Kenzie Kars.",
     img_banner: "/assets/img/project_example.jpg",
-    types: ["Acadêmico", "Front-End"],
+    types: ["Acadêmico", "Back-End"],
     deploy: undefined,
     repository: "https://github.com/cesarrafaeljunior/kenzie_kars_back",
     techs: ["Node.js", "Express", "Jwt", "Nodemialer", "Postgres", "TypeOrm"],
@@ -40,7 +40,7 @@ export const projects: iProjects[] = [
     description:
       "O projeto Market Maker visa gerenciar os pedidos realizados presencialmente em restaurantes e bares, provendo uma otimização de tempo do momento do pedido até a produção, facilitando a comunicação entre as equipes do estabelecimento. O sistema automatiza o recebimento de pedidos, serviço de mesa, preparo e entrega de produtos. Tudo é controlado através de eletrônicos, mantendo os registros de cada etapa. A partir daí, Market Maker visa um sistema de qualidade, que evita erros humanos e falhas sistêmicas.",
     img_banner: "/assets/img/project_example.jpg",
-    types: ["Acadêmico", "Front-End"],
+    types: ["Acadêmico", "Back-End", "Equipe"],
     deploy: undefined,
     repository: "https://github.com/cesarrafaeljunior/market-maker",
     techs: [
@@ -59,7 +59,7 @@ export const projects: iProjects[] = [
     description:
       "Um sistema que permite usuários registrarem seus albums e suas músicas favoritas.",
     img_banner: "/assets/img/project_example.jpg",
-    types: ["Acadêmico", "Front-End"],
+    types: ["Acadêmico", "Back-End"],
     deploy: undefined,
     repository: "https://github.com/cesarrafaeljunior/biblioteka-api",
     techs: ["Python", "Django", "Rest Framework", "Sql"],
