@@ -38,8 +38,13 @@ export const Projects = () => {
                                         <div className="flex items-end gap-[1rem]">
                                             <Image src={img} alt="qualquer" width={400} height={400}/> 
                                             <div className="flex flex-col gap-[1rem]">
-                                                <a href="#" className="transition delay-[0.1s] hover:text-violet-500">Acessar repositório</a>
-                                                <a href="#" className="transition delay-[0.1s] hover:text-violet-500">Visualizar projeto</a>                                            
+                                                <a href={project.repository} className="transition delay-[0.1s] hover:text-violet-500 cursor-pointer" target="_blank">Acessar repositório</a>
+                                                {project.type == "front-end" 
+                                                    ? 
+                                                    <a href={project.deploy} className="transition delay-[0.1s] hover:text-violet-500 cursor-pointer" target="_blank">Visualizar projeto</a>
+                                                    :
+                                                    <a href={project.deploy} className="transition delay-[0.1s] hover:text-violet-500 cursor-pointer" target="_blank">Visualizar documentação</a>
+                                                }                                           
                                             </div>       
                                         </div>
                                     </div>

@@ -4,7 +4,7 @@ import {AiOutlineFundProjectionScreen} from "react-icons/ai"
 
 export const NavComponent = () => {
     return (
-        <nav className="absolute right-40 top-[1.5rem]">
+        <nav className="fixed right-[19rem] top-[1.5rem] p-[1rem] bg-zinc-900 rounded-[20px] z-10">
         <ul className="flex items-center justify-center gap-[2.5rem] text-[1.2rem]">
           <li className="w-full flex items-center gap-[0.5rem] justify-center">
             <AiOutlineHome className="text-[1.3rem]"/>

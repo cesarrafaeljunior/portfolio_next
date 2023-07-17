@@ -1,4 +1,16 @@
-export const projects = [
+interface iProjects {
+  id: number;
+  title: string;
+  description: string;
+  img_banner: string;
+  types: string[];
+  deploy: string | undefined;
+  repository: string | undefined;
+  techs: string[];
+  type: string;
+}
+
+export const projects: iProjects[] = [
   {
     id: 1,
     title: "Kenzie Kars",
@@ -6,9 +18,10 @@ export const projects = [
       "Kenzie Kars é uma plataforma online para compra e venda de veículos automotivos, oferecendo opções tanto para carros novos quanto usados. Como cliente, você pode navegar por diversos anúncios de carros e encontrar o veículo que atenda às suas necessidades e orçamento. Já como vendedor, você pode anunciar seu carro e expô-lo a uma ampla audiência de compradores em potencial.",
     img_banner: "./assets/img/project_example.jpg",
     types: ["Acadêmico", "Front-End"],
-    deploy: "motors-shop-ten.vercel.app",
+    deploy: "https://motors-shop-ten.vercel.app/",
     repository: "https://github.com/cesarrafaeljunior/kenzie_kars_front",
     techs: ["React", "TypeScript", "Next.js", "Chakra UI", "Yup"],
+    type: "front-end",
   },
   {
     id: 2,
@@ -16,9 +29,10 @@ export const projects = [
     description: "Api da aplicação Kenzie Kars.",
     img_banner: "./assets/img/project_example.jpg",
     types: ["Acadêmico", "Front-End"],
-    deploy: null,
+    deploy: undefined,
     repository: "https://github.com/cesarrafaeljunior/kenzie_kars_back",
     techs: ["Node.js", "Express", "Jwt", "Nodemialer", "Postgres", "TypeOrm"],
+    type: "back-end",
   },
   {
     id: 3,
@@ -27,7 +41,7 @@ export const projects = [
       "O projeto Market Maker visa gerenciar os pedidos realizados presencialmente em restaurantes e bares, provendo uma otimização de tempo do momento do pedido até a produção, facilitando a comunicação entre as equipes do estabelecimento. O sistema automatiza o recebimento de pedidos, serviço de mesa, preparo e entrega de produtos. Tudo é controlado através de eletrônicos, mantendo os registros de cada etapa. A partir daí, Market Maker visa um sistema de qualidade, que evita erros humanos e falhas sistêmicas.",
     img_banner: "./assets/img/project_example.jpg",
     types: ["Acadêmico", "Front-End"],
-    deploy: null,
+    deploy: undefined,
     repository: "https://github.com/cesarrafaeljunior/market-maker",
     techs: [
       "Node.js",
@@ -37,28 +51,31 @@ export const projects = [
       "Postgres",
       "TypeOrm",
     ],
+    type: "back-end",
   },
   {
     id: 4,
     title: "Biblioteka Api",
     description:
-      "Um sistema que permite usuários registrarem seus almbums e suas músicas .",
+      "Um sistema que permite usuários registrarem seus albums e suas músicas favoritas.",
     img_banner: "./assets/img/project_example.jpg",
     types: ["Acadêmico", "Front-End"],
-    deploy: null,
+    deploy: undefined,
     repository: "https://github.com/cesarrafaeljunior/biblioteka-api",
     techs: ["Python", "Django", "Rest Framework", "Sql"],
+    type: "back-end",
   },
   {
     id: 5,
     title: "Finances control",
     description:
-      "Finances control é um projeto simples e acadêmico, o aplicativo simula um gerenciamento de finanças, permitindo o usuário cadastrar entradas e saídas de dinheiro. O cálculo de entradas e saídas acontece dinamicamente. ###OBS: A plicação não salva as informações",
+      "Finances control é um projeto simples e acadêmico, o aplicativo simula um gerenciamento de finanças, permitindo o usuário cadastrar entradas e saídas de dinheiro. O cálculo de entradas e saídas acontece dinamicamente.",
     img_banner: "./assets/img/project_example.jpg",
     types: ["Acadêmico", "Front-End"],
     deploy: "https://react-entrega-s1-nu-kenzie-cesarrafaeljunior.vercel.app/",
     repository: "https://github.com/cesarrafaeljunior/finances_control",
     techs: ["React"],
+    type: "front-end",
   },
   {
     id: 6,
@@ -71,6 +88,7 @@ export const projects = [
       "https://react-entrega-s1-hamburgueria-da-kenzie-cesarrafaeljunior-19.vercel.app/",
     repository: "https://github.com/cesarrafaeljunior/e-commerce_hamburgueria",
     techs: ["React", "Style Components", "Axios"],
+    type: "front-end",
   },
   {
     id: 7,
@@ -90,23 +108,6 @@ export const projects = [
       "Axios",
       "Router Dom",
     ],
-  },
-  {
-    id: 8,
-    title: "PortGeek",
-    description:
-      "Port Geek é um projeto acadêmico, desenvolvido em equipe, ele permite que usuários se cadastrem na plataforma para que possam gerar o seu próprio portfólio, podendo escolher dentre umas das 3 opções inicalmente adicionadas na aplicação. Nossa aplicação, permite que o usuário adicione imagens de perfil, imagem de um projeto com seu respectivo link de deploy e repositório, este projeto será clickável quando o portfólio for gerado.",
-    img_banner: "./assets/img/project_example.jpg",
-    types: ["Acadêmico", "Front-End"],
-    deploy: "https://port-geek-main.vercel.app/",
-    repository: "https://github.com/cesarrafaeljunior/port-geek",
-    techs: [
-      "React",
-      "TypeScript",
-      "Styled Components",
-      "Axios",
-      "Router Dom",
-      "Hook Forms",
-    ],
+    type: "front-end",
   },
 ];
