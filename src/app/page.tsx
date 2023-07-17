@@ -7,12 +7,12 @@ import { Projects } from "@/components/projects";
 export default function Home() {
   return (
   <>
-    <div className="max-w-screen-xl m-auto">
-      <main className="bg-zinc-900 relative">
-        <section className="w-full h-full flex flex-col relative" id="home">
+    <div className="max-w-7xl m-auto">
+      <main className="bg-zinc-900 relative px-[2rem]">
+        <section className="w-full flex flex-col" id="home">
           <NavComponent/>
           <Perfil.Apresentation/>
-          <div className="flex items-center gap-[2rem] w-full">
+          <div className="flex items-center gap-[2rem] w-full phone:flex-col phone:gap-[1rem]">
             <Perfil.FormationInfos/>
             <Perfil.Contacts/>
           </div>
@@ -25,7 +25,7 @@ export default function Home() {
         </section>
       </main>
     </div>
-    <section className="w-full bg-slate-950 mt-[10rem]">
+    <section className="w-full bg-slate-950">
         <Footer/>
     </section>
   </>
