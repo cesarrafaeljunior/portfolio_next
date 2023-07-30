@@ -16,7 +16,7 @@ export const Apresentation = () => {
                 <div className="flex gap-[0.2rem] text-violet-700">
                     <FaLessThan/><FaGreaterThan/>  
                 </div>
-                <div className="flex flex-col gap-[1rem] ml-[1rem] my-[1rem] phone:items-start">
+                <div className="flex flex-col gap-[1rem] ml-[1rem] my-[0.5rem] phone:items-start">
                     <h1><span className="text-4xl text-violet-700 phone:text-[2rem]">Olá</span>,<span className="text-[2.2rem] phone:text-[1.5rem]"> eu sou o César</span></h1>
                     <p className="text-violet-600">Desenvolvedor Full Stack</p>
                     <p className="text-gray-400">&quot;Conectando tecnologia e inovação, uma linha de código por vez&quot;</p>        
