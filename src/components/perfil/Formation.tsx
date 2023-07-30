@@ -14,11 +14,11 @@ export const FormationInfos = () => {
                 <p className="w-[50%] text-gray-400 phone:w-[100%]  phone:text-center">Formado pela instituição Kenzie Academy Brasil como <strong>Técnico em programação</strong></p>
                 <h3 className="text-[1.2rem] my-[2.5rem] font-bold">Principais tecnologias</h3>
                 <div className="w-[50%] flex gap-[2rem] phone:w-[100%] phone:overflow-x-auto phone:px-[1rem] phone:py-[1rem]">
-                    <IconTech icon={BiLogoJavascript} percentage="100%" title="JavaScript"/>
-                    <IconTech icon={BiLogoReact} percentage="100%" title="React"/>
-                    <IconTech icon={TbDatabaseSearch} percentage="100%" title="Sql"/>
-                    <IconTech icon={BiLogoPython} percentage="100%" title="Python"/>
-                    <IconTech icon={BiLogoNodejs} percentage="100%" title="Node.js"/>
+                    <IconTech icon={BiLogoJavascript} title="JavaScript"/>
+                    <IconTech icon={BiLogoReact} title="React"/>
+                    <IconTech icon={TbDatabaseSearch} title="Sql"/>
+                    <IconTech icon={BiLogoPython} title="Python"/>
+                    <IconTech icon={BiLogoNodejs} title="Node.js"/>
                 </div>
                 <button className="w-[240px] ml-[5rem] mt-[1rem] p-[0.5rem] rounded-[20px] font-bold text-slate-50 transition ease-in-out delay-[0.1s] hover:text-violet-300 phone:ml-[0]">Ver todas as competências</button>
             </div>
