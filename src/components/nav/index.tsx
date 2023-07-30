@@ -4,7 +4,7 @@ import {AiOutlineFundProjectionScreen} from "react-icons/ai"
 
 export const NavComponent = () => {
     return (
-        <nav className="fixed right-[1.5rem] top-[1.2rem]  p-[1rem] bg-zinc-900 rounded-[20px] z-10 phone:w-[100%] phone:right-[0] phone:top-[0] phone:p-[0.5rem] phone:bg-zinc-800 phone:rounded-none phone:z-10 desktop:right-[22rem]">
+        <nav className="fixed right-[20rem] top-[1.2rem]  p-[1rem] bg-zinc-900 rounded-[20px] z-10 phone:w-[100%] phone:right-[0] phone:top-[0] phone:p-[0.5rem] phone:bg-zinc-800 phone:rounded-none phone:z-10 desktop:right-[22rem]">
           <ul className="flex items-center justify-center gap-[2.5rem] text-[1.2rem] phone:text-[1rem] phone:gap-[1.5rem]">
             <li className="w-full flex items-center gap-[0.5rem] justify-center">
               <AiOutlineHome className="text-[1.3rem] phone:text-[1rem]"/>
@@ -15,13 +15,13 @@ export const NavComponent = () => {
             <li className="w-full flex items-center gap-[0.5rem] justify-center">
               <AiFillExclamationCircle className="text-[1.3rem] phone:text-[1rem]"/>
               <a href="#about" className="hover:text-violet-500 transition delay-[0.1s]">
-                About
+                Sobre
               </a>
             </li>
             <li className="w-full flex items-center gap-[0.5rem] justify-center">
               <AiOutlineFundProjectionScreen className="text-[1.3rem] phone:text-[1rem]"/>
               <a href="#projects" className="hover:text-violet-500 transition delay-[0.1s]">
-                Projects
+                Projetos
               </a>
             </li>
           </ul>

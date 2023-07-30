@@ -10,3 +10,27 @@
   color: #a838ff !important;
   font-weight: bold;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.mouseAnimation {
+  animation: infinite;
+  animation-name: mouseAnimation;
+  animation-duration: 3s;
+}
+
+@keyframes mouseAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
