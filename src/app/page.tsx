@@ -4,7 +4,6 @@ import { NavComponent } from "@/components/nav";
 import { Perfil } from "@/components/perfil";
 import { Projects } from "@/components/projects";
 import {BsMouse} from "react-icons/bs"
-import 'animate.css';
 
 export default function Home() {
   return (
