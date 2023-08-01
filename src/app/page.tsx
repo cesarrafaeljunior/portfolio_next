@@ -12,16 +12,16 @@ export default function Home() {
     <div className="max-w-7xl m-auto">
       <main className="justify-start bg-zinc-900 relative px-[2rem]">
         <section className="w-full flex flex-col relative" id="home">
+        <div className="flex items-center absolute bottom-[-8rem] self-center mouseAnimation mt-[5rem] phone:hidden">
+            <BsMouse className="text-[2rem]"/>
+            <p>Role para baixo</p>
+        </div>
           <NavComponent/>
           <Perfil.Apresentation/>  
           <ParticlesContainer/>
-          <div className="flex items-center gap-[2rem] w-full phone:flex-col phone:gap-[1rem]">
+          <div className="flex items-center gap-[2rem] w-full phone:flex-col phone:gap-[1rem] relative">
             <Perfil.FormationInfos/>
             <Perfil.Contacts/>
-          </div>
-          <div className="flex items-center absolute bottom-[-8rem] self-center mouseAnimation mt-[5rem] phone:hidden">
-            <BsMouse className="text-[2rem]"/>
-            <p>Role para baixo</p>
           </div>
         </section>
         <section className="flex flex-col items-center justify-center w-full h-full mt-[15rem] phone:mt-0" id="about">

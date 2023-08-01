@@ -15,7 +15,8 @@ export const ParticlesContainer = () => {
       loaded={particlesLoaded}
       options={{
         fullScreen: {
-          enable: false,
+          enable: true,
+          zIndex: -1,
         },
         fpsLimit: 70,
         background: {
@@ -53,7 +54,7 @@ export const ParticlesContainer = () => {
             color: "#4b88a5",
             distance: 150,
             enable: true,
-            opacity: 0.2,
+            opacity: 0.5,
             width: 1,
           },
           collisions: {
@@ -72,12 +73,12 @@ export const ParticlesContainer = () => {
           number: {
             density: {
               enable: true,
-              area: 1800,
+              area: 900,
             },
             value: 80,
           },
           opacity: {
-            value: 0.5,
+            value: 1,
           },
           shape: {
             type: "circle",

@@ -7,7 +7,7 @@ export const Contacts = () => {
         <section className="flex flex-col items-start self-end gap-[1rem] phone:gap-[2rem]  phone:mt-[2rem] phone:self-center">
             <div className="flex items-center gap-[0.5rem]">
                 <AiOutlineMail className="text-[1.5rem]"/>
-                <p>cesarrdev@gmail.com</p>
+                <a className="hover:text-violet-200" href="mailto:cesarrdev@gmail.com" target="_blank"><p>cesarrdev@gmail.com</p></a>
             </div>
             <div className="flex items-center gap-[0.5rem]">
                 <AiOutlinePhone className="text-[1.5rem]"/>
