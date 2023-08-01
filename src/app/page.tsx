@@ -1,6 +1,7 @@
 import { About } from "@/components/about";
 import { Footer } from "@/components/footer";
 import { NavComponent } from "@/components/nav";
+import { ParticlesContainer } from "@/components/particles";
 import { Perfil } from "@/components/perfil";
 import { Projects } from "@/components/projects";
 import {BsMouse} from "react-icons/bs"
@@ -12,7 +13,8 @@ export default function Home() {
       <main className="justify-start bg-zinc-900 relative px-[2rem]">
         <section className="w-full flex flex-col relative" id="home">
           <NavComponent/>
-          <Perfil.Apresentation/>
+          <Perfil.Apresentation/>  
+          <ParticlesContainer/>
           <div className="flex items-center gap-[2rem] w-full phone:flex-col phone:gap-[1rem]">
             <Perfil.FormationInfos/>
             <Perfil.Contacts/>
