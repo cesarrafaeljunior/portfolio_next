@@ -29,7 +29,7 @@ export const Footer = () => {
                             <div className="flex flex-col phone:flex-row gap-[1rem] phone:gap-[0.5rem]">
                                 <div className="flex gap-[0.2rem] items-center">
                                     <AiOutlinePhone className="text-[2rem] phone:text-[1rem]"/>
-                                    <p className="font-bold"><a href="https://wa.me/+5535999778571" target="_blank" className="hover:text-violet-200 phone:text-[0.8rem]">+55 35 9 99778571</a></p>
+                                    <p className="font-bold"><a href="https://wa.me/+5535999778571" target="_blank" className="hover:text-violet-200 phone:text-[0.8rem]">+55 35 9 97416468</a></p>
                                 </div>
                                 <div className="flex gap-[0.2rem] items-center">
                                     <AiOutlineMail className="text-[2rem] phone:text-[1rem]"/>
