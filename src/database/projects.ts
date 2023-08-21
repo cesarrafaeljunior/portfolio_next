@@ -12,6 +12,18 @@ interface iProjects {
 
 export const projects: iProjects[] = [
   {
+    id: 0,
+    title: "Break Briks Game",
+    description:
+      "Break Bricks Game é um jogo indie que eu mesmo desenvolvi usando apenas TypeScript, HTML e CSS. Nele, você basicamente quebra tijolos que são os inimigos do jogo para ganhar. Você pode pausar, dar play, reiniciar e começar quando quiser",
+    img_banner: "/assets/img/projectsBanner/break_bricks.png",
+    types: ["Acadêmico", "Front-End", "Game"],
+    deploy: "https://main--tiny-sundae-cc3049.netlify.app",
+    repository: "https://github.com/cesarrafaeljunior/break_bricks_game",
+    techs: ["TypeScript", "Html", "Css", "Canvas", "Webpack"],
+    type: "front-end",
+  },
+  {
     id: 1,
     title: "Kenzie Kars",
     description:
