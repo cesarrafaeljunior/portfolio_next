@@ -13,6 +13,18 @@ interface iProjects {
 export const projects: iProjects[] = [
   {
     id: 0,
+    title: "Site de consultoria",
+    description:
+      "Este site institucional foi desenvolvido de forma independente, como um projeto de freelancer, para atender às necessidades de uma palestrante.",
+    img_banner: "/assets/img/projectsBanner/gabi_site.png",
+    types: ["Freelancer", "Front-End", "Site"],
+    deploy: "https://gabilourenco.com.br/",
+    repository: undefined,
+    techs: ["Next.js", "Html", "Css","Swipper","reCAPCHA","Tailwind"],
+    type: "front-end",
+  },
+  {
+    id: 1,
     title: "Break Briks Game",
     description:
       "Break Bricks Game é um jogo indie que eu mesmo desenvolvi usando apenas TypeScript, HTML e CSS. Nele, você basicamente quebra tijolos que são os inimigos do jogo para ganhar. Você pode pausar, dar play, reiniciar e começar quando quiser",
@@ -24,7 +36,7 @@ export const projects: iProjects[] = [
     type: "front-end",
   },
   {
-    id: 1,
+    id: 2,
     title: "Kenzie Kars",
     description:
       "Kenzie Kars é uma plataforma online para compra e venda de veículos automotivos, oferecendo opções tanto para carros novos quanto usados. Como cliente, você pode navegar por diversos anúncios de carros e encontrar o veículo que atenda às suas necessidades e orçamento. Já como vendedor, você pode anunciar seu carro e expô-lo a uma ampla audiência de compradores em potencial.",
@@ -36,7 +48,7 @@ export const projects: iProjects[] = [
     type: "front-end",
   },
   {
-    id: 2,
+    id: 3,
     title: "Kenzie Kars Api",
     description: "Api da aplicação Kenzie Kars.",
     img_banner: "/assets/img/project_example.jpg",
@@ -47,7 +59,7 @@ export const projects: iProjects[] = [
     type: "back-end",
   },
   {
-    id: 3,
+    id: 4,
     title: "Market Maker Api",
     description:
       "O projeto Market Maker visa gerenciar os pedidos realizados presencialmente em restaurantes e bares, provendo uma otimização de tempo do momento do pedido até a produção, facilitando a comunicação entre as equipes do estabelecimento. O sistema automatiza o recebimento de pedidos, serviço de mesa, preparo e entrega de produtos. Tudo é controlado através de eletrônicos, mantendo os registros de cada etapa. A partir daí, Market Maker visa um sistema de qualidade, que evita erros humanos e falhas sistêmicas.",
@@ -66,7 +78,7 @@ export const projects: iProjects[] = [
     type: "back-end",
   },
   {
-    id: 4,
+    id: 5,
     title: "Biblioteka Api",
     description:
       "Um sistema que permite usuários registrarem seus albums e suas músicas favoritas.",
@@ -78,7 +90,7 @@ export const projects: iProjects[] = [
     type: "back-end",
   },
   {
-    id: 5,
+    id: 6,
     title: "Finances control",
     description:
       "Finances control é um projeto simples e acadêmico, o aplicativo simula um gerenciamento de finanças, permitindo o usuário cadastrar entradas e saídas de dinheiro. O cálculo de entradas e saídas acontece dinamicamente.",
@@ -90,7 +102,7 @@ export const projects: iProjects[] = [
     type: "front-end",
   },
   {
-    id: 6,
+    id: 7,
     title: "Burguer Kenzie",
     description:
       "Hamburguer Shop é um projeto simples acadêmico desenvolvido utilizando React básico, o app simula um e-commerce de uma hamburgueria, onde o usuário é capaz de adicionar e remover produtos do carrinho, a quantidade do produto é alterada dinamicamente ao tentar adicionar mais de um do mesmo produto, o valor total da compra também é alterado dinamicamente a depender da quantidade de items adicionados no carrinho.",
@@ -103,7 +115,7 @@ export const projects: iProjects[] = [
     type: "front-end",
   },
   {
-    id: 7,
+    id: 8,
     title: "Mks System",
     description:
       "O projeto se trata de uma simulação de um e-commerce de eletrônicos, várias funcionalidades comums de um e-commerce foram adicionadas, tais como, adicionar produtos no carrinho, alterar a quantidade do mesmo produto no carrinho, remover produtos do carrinho, alteração automatica no total de preços da compra. O aplicativo consome uma Api Rest de produtos e os exibe na tela.",
@@ -120,6 +132,18 @@ export const projects: iProjects[] = [
       "Axios",
       "Router Dom",
     ],
+    type: "front-end",
+  },
+  {
+    id: 9,
+    title: "Workout",
+    description:
+      "Workout, é uma landing page responsiva criada para academias.",
+    img_banner: "/assets/img/projectsBanner/workout.png",
+    types: ["Acadêmico", "Front-End", "Landing Page"],
+    deploy: "https://aquamarine-unicorn-6e7c63.netlify.app/",
+    repository: "https://github.com/cesarrafaeljunior/workout",
+    techs: ["JavaScript", "Html", "Css"],
     type: "front-end",
   },
 ];

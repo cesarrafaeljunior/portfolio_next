@@ -37,7 +37,10 @@ export const Projects = () => {
                                                 <Image src={project.img_banner} alt={project.title} width={400} height={400} className="h-[15rem] cursor-pointer hover:brightness-75 transition delay-[0.1s] object-cover"/> 
                                             </a>
                                             <div className="flex flex-col gap-[1rem]">
-                                                <a href={project.repository} className="transition delay-[0.1s] hover:text-violet-500 cursor-pointer" target="_blank">Acessar repositório</a>
+                                                {project.repository && (
+                                                    <a href={project.repository} className="transition delay-[0.1s] hover:text-violet-500 cursor-pointer" target="_blank">Acessar repositório</a>
+                                                )}
+                                                
                                                 {project.type == "front-end" 
                                                     ? 
                                                     <a href={project.deploy} className="transition delay-[0.1s] hover:text-violet-500 cursor-pointer" target="_blank">Visualizar projeto</a>
