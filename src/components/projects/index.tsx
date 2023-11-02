@@ -120,7 +120,7 @@ export const Projects = () => {
                 </div>
               </SwiperSlide>
             );
-          })}
+          }).reverse()}
         </Swiper>
         <p className="absolute top-[1rem] right-[11rem] phone:right-[0] phone:top-[2.5rem]">
           Projetos: {projectNumber + 1}/{projects.length}

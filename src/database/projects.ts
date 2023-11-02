@@ -146,4 +146,28 @@ export const projects: iProjects[] = [
     techs: ["JavaScript", "Html", "Css"],
     type: "front-end",
   },
+  {
+    id: 10,
+    title: "Digivice Api",
+    description:
+      "A Digivice API é uma ferramenta que permite acessar informações sobre Digimons. Ela se integra a uma fonte externa de dados sobre essas criaturas digitais e oferece a flexibilidade de filtrar os resultados com base em critérios como nome e nível. Isso torna a consulta de informações sobre Digimons mais fácil e personalizável para atender às suas necessidades específicas.",
+    img_banner: "/assets/img/project_example.jpg",
+    types: ["Teste técnico", "Back end", "Api"],
+    deploy: "https://github.com/cesarrafaeljunior/digivice_api/blob/master/README.md#doc",
+    repository: "https://github.com/cesarrafaeljunior/digivice_api",
+    techs: ["Java", "Spring Boot","Maven","IntelliJ"],
+    type: "back-end",
+  },
+  {
+    id: 11,
+    title: "Digivice",
+    description:
+      "O Digivice é uma aplicação que interage com uma API de Digimon. Ele permite aos usuários navegar por uma lista de Digimons e selecioná-los para visualização dentro de um Dispositivo Digimon. Além disso, o Digivice oferece funcionalidades de navegação, como botões para avançar e retroceder entre os Digimons exibidos. Também é possível obter informações detalhadas de um Digimon selecionado.",
+    img_banner: "/assets/img/projectsBanner/digivice.png",
+    types: ["Teste técnico", "Front end", "Aplicação"],
+    deploy: "https://digivice-six.vercel.app/",
+    repository: "https://github.com/cesarrafaeljunior/digivice",
+    techs: ["Html", "Css","Angular"],
+    type: "front-end",
+  },
 ];
